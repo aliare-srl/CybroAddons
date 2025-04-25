@@ -69,7 +69,7 @@ class Home(main.Home):
                                 values['error'] = _("Wrong login/password")
                     else:
                         request.uid = old_uid
-                        values['error'] = _("Not allowed to login from this IP") + ip_address
+                        values['error'] = _("Acceso no autorizado. Tu ") + ip_address
                 else:
                     try:
                         uid = request.session.authenticate(request.session.db,
