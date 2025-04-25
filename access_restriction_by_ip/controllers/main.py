@@ -44,7 +44,6 @@ class Home(main.Home):
         if request.httprequest.method == 'POST':
             old_uid = request.uid
             ip_address = request.httprequest.environ['REMOTE_ADDR']
-            is_ip_allowed = self._check_ip_allowed(ip_address)
             if request.params['login']:
                 user_rec = request.env['res.users'].sudo().search(
                     [('login', '=', request.params['login'])])
@@ -69,7 +68,7 @@ class Home(main.Home):
                                 values['error'] = _("Wrong login/password")
                     else:
                         request.uid = old_uid
-                        values['error'] = _("Not allowed to login from this IP") % is_ip_allowed
+                        values['error'] = _("Not allowed to login from this IP")
                 else:
                     try:
                         uid = request.session.authenticate(request.session.db,
