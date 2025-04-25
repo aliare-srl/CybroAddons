@@ -88,7 +88,7 @@ class Home(main.Home):
 
     @http.route('/get_ip', auth='user', type='json')
     def get_ip(self):
-        ip_address = request.httprequest.environ['REMOTE_ADDR']
+        ip_address = request.httprequest.headers.get('X-Forwarded-For', request.httprequest.environ.get('REMOTE_ADDR'))
         ip_addresses = []
         for ips in request.env.user.allowed_ips:
             ip_addresses.append(ips.ip_address)
