@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 msgid ""
 msgstr ""
 "Project-Id-Version: mass_price_update\n"
@@ -11,35 +12,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: wizard:apply_on
 msgid "Apply on"
 msgstr "Aplicar sobre"
 
+#: wizard:change
 msgid "Change"
 msgstr "Cambio (%)"
 
+#: wizard:apply_type
 msgid "Apply Type"
 msgstr "Tipo de aplicación"
 
+#: wizard.apply_type:add
 msgid "Add"
 msgstr "Añadir"
 
+#: wizard.apply_type:reduce
 msgid "Reduce"
 msgstr "Reducir"
 
+#: wizard.model_name
 msgid "Mass Price Update"
 msgstr "Actualización Masiva de Precios"
 
+#: wizard.preview_current
 msgid "Current Price/Cost"
 msgstr "Precio/Costo Actual"
 
+#: wizard.preview_new
 msgid "New Price/Cost"
 msgstr "Nuevo Precio/Costo"
 
+#: action.confirm_update
 msgid "Are you sure you want to apply these changes?"
 msgstr "¿Estás seguro de aplicar estos cambios?"
 
+#: notification.price_update_done
 msgid "Price update completed"
 msgstr "Actualización de precios completada"
 
+#: group_name
 msgid "Mass Price Update: Administrator"
 msgstr "Actualización Masiva de Precios: Administrador"
