@@ -25,8 +25,6 @@
         <field name="arch" type="xml">
             <field name="name" position="after">
                 <field name="users_allowed"/>
-                <field name="users_allowed"
-                       groups="point_of_sale.group_pos_manager"/>
             </field>
         </field>
     </record>
